@@ -1,0 +1,20 @@
+<div class="container-xxl py-5" id="service" style="background: linear-gradient(rgba(15, 23, 43, .8), rgba(15, 23, 43, .8)),url(../static/img/bg-hero.jpg); background-position: center center; background-repeat: no-repeat;background-size: cover;">
+            <div class="container">
+                <div class="row g-4">
+                    {% for item in service %}
+
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="{{ item.timer }}s">
+                        <div class="service-item rounded pt-3">
+                            <div  class="p-4">
+                                {% if item.icon.url %}
+                                    <img class="w-25" src="{{ item.icon.url }}">
+                                {% endif %}
+                                <h5 class="text-white">{{ item.name }}</h5>
+                                <p>{{ item.desc }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>

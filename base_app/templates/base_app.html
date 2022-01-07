@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Service Start -->
+        {% include 'service.html' %}
+
+        <!-- About Start -->
+        {% include 'about_header.html' %}
+
+        <!-- Menu Start -->
+        {% include 'menu.html' %}
+
+
+        <!-- Reservation Start -->
+        {% include 'book_a_table.html' %}
+        <!--- Reservation Start --->
+
+
+        <!-- Team Start -->
+        {% include 'chef.html' %}
+        <!-- Team End -->
+
+
+        <!-- Testimonial Start -->
+        {% include 'feedback.html' %}
+        <!-- Testimonial End -->
+
+{% endblock %}
