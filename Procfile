@@ -1,1 +1,1 @@
-web: gunicorn kaban_cafe.wsgi --log-file -
+web: gunicorn kaban_cafe.wsgi --log-file
